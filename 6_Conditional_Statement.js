@@ -1,6 +1,5 @@
 // Conditional Statement in JavaScript
 
-
 let a = 2;
 let b = 10;
 
@@ -17,7 +16,6 @@ if (a < b) {
   console.log("a < b");
 }
 
-
 // 2. if-else statement
 
 /* Syntax : -
@@ -31,15 +29,11 @@ else
 }
 */
 
-if (a > b) 
-{
+if (a > b) {
   console.log("a > b");
-}
-else 
-{
+} else {
   console.log("a < b");
 }
-
 
 // 2. if-else if-else statement
 
@@ -58,15 +52,45 @@ else
 }
 */
 
-if (a > b) 
-{
+if (a > b) {
   console.log("a > b");
-}
-else if (a == b )
-{
+} else if (a == b) {
   console.log("a == b");
-}
-else
-{
+} else {
   console.log("a < b");
+}
+
+// 3. Switch case Statement
+/*
+switch (condition)
+{
+  case (condition):
+  statement to be executed;
+  break;
+
+  case (condition):
+  statement to be executed;
+  break;
+
+  case (condition):
+  statement to be executed;
+  break;
+
+  default:
+  statement to be executed;
+}
+*/
+
+let x = "0";
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+
+  case 1:
+    text = "On";
+    break;
+
+  default:
+    text = "No value found";
 }
