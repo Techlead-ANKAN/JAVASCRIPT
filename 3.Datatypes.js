@@ -1,39 +1,56 @@
-// JavaScript has 8 Datatypes
+// JavaScript has 8 Datatypes (7 Primitive data types(1st 7))
+
 // 1. String - textual data
-let color = "yellow";
+let a = "yellow";
 
 // 2. Number - numbers
-let num = 120;
+let b = 120;
 
-// 3. Bigint - new data types to represent integers of arbitrary                length
-let bigInt = 1234567890123456789012345678901234567890n;
+// 3. Bigint - new data types to represent integers of arbitrary length
+let c = BigInt("1234567890123456789012345678901234567890");
 
 // 4. Boolean - true or false
-let isTrue = false;
+let d = false;
 
 // 5. Undefined - return statement with no value
-let a;
+let e;
 
-// 6. Null - nulled value
-let b = null;
+// 6. Null - nulled value of datatype object
+let f = null;
 
 // 7. Symbol - unique value
-let sym = Symbol("unique symbol");
+let g = Symbol("unique symbol");
 
-// 8. Object
+console.log(a, b, c, d, e, f, g);
 
-// The Object Datatype
+// typeof  - it is used to show the the type of the datatype
+console.log(typeof a); // string
+console.log(typeof b); // number
+console.log(typeof c); // bigint
+console.log(typeof d); // boolean
+console.log(typeof e); // undefined
+console.log(typeof f); // object
+console.log(typeof g); // symbol
+
+
+
+// Object (Non-Primitive Data type)
+
+// 8. Object - These are the data types that contains many "name : value" pairs separated by a coma.
+const h = {
+  name: "Ankan Maity",
+  age: 20,
+  gender: "Male",
+};
+
+console.log(h["name"]);
+console.log(h.age);
+
+
+console.log(typeof h); // object
 
 // The object data type can contain:
 
 // 1. An object
 // 2. An array
 // 3. A date
-
-console.log(color);
-console.log(num);
-console.log(bigInt);
-console.log(isTrue);
-console.log(a);
-console.log(b);
-console.log(sym);

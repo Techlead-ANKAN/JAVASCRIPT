@@ -45,3 +45,59 @@ console.log(a); // this will show 20
 // 4.
 var z;
 console.log(z); // this will show undefined
+
+// 5.
+var name = "Piu";
+{
+  var name = "Ankan Maity";
+  console.log("Inside Block: " + name); // this will show Ankan Maity
+}
+console.log("Outside Block: " + name); // this will show Ankan Maity
+
+//====================================================================================================
+
+//"Testcases" for "let"
+console.log("\nTest cases for 'let' \n");
+// 1.
+let age = 25;
+{
+  let age = 20;
+  console.log("Inside Block: " + age); // this will show 20
+}
+console.log("Outside Block: " + age); // this will show 25
+
+// 2.
+//console.log(gender); //  ReferenceError "gender" is not defined
+
+// 3.
+let college_name = "HIT";
+//let college_name = "IEM";  Identifier 'college_name' has already been declared
+console.log("College Name: " + college_name);
+
+// 4.
+// console.log(newvar); // newvar is not defined
+
+//====================================================================================================
+
+//"Testcases" for "let"
+console.log("\nTest cases for 'const' \n");
+
+// 1.
+const y = 10;
+//const y = 20;
+console.log("y: " + y); // Identifier 'a' has already been declared
+
+// 2.
+const frnd = "Piu";
+{
+  const frnd = "Ankan";
+  console.log("Inside Block: " + frnd); // this will show Ankan
+}
+console.log("Outside Block: " + frnd); // this will show Piu
+
+// 3.
+const person = "xyz";  // global variable
+{
+  console.log("Inside Block: " + person); // this will show xyz
+}
+console.log("Outside Block: " + person); // this will show xyz
