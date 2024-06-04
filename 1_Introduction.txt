@@ -1,0 +1,18 @@
+------------------------------  JAVASCRIPT  ------------------------------
+
+1) What is a Javascript ?
+---> It is a powerful programming langugae that can add interactivity to your website.
+
+2) Invented by "Brendan Eich" in "1995"
+
+3) It can be sused for "Client Side Developments" as well as "Server Side Developments"
+
+4) JavaScript became an ECMA Standard in the year "1997"
+
+5) JavaScript versions [ https://www.geeksforgeeks.org/javascript-versions/?ref=lbp ]
+
+
+
+
+What is ECMA Script?
+---> ECMAScript is a standard for scripting languages, including JavaScript, JScript, and ActionScript. It is best known as a JavaScript standard intended to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International in the document ECMA-262.

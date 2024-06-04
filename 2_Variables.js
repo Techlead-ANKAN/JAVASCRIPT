@@ -4,8 +4,7 @@
 
 // 1."var"
 //       a) you cannot use the variable before declaring it.
-//       b) Variables declared with "var" are "function-scoped", meaning they are only accessible within the function they are declared in, or
-//          globally if declared outside of any function
+//       b) Variables declared with "var" are "function-scoped", meaning they are only accessible within the function they are declared in, or globally if declared outside of any function
 //       c) Variables declared with "var" can be re-declared within the same scope without raising an error.
 //       d) They are not limited to the block in which they are defined, but rather they are scoped to the nearest function or globally.
 //       e) Variables declared using "var" but no initialization have a value of "undefined"
@@ -96,7 +95,7 @@ const frnd = "Piu";
 console.log("Outside Block: " + frnd); // this will show Piu
 
 // 3.
-const person = "xyz";  // global variable
+const person = "xyz"; // global variable
 {
   console.log("Inside Block: " + person); // this will show xyz
 }
