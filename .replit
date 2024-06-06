@@ -1,4 +1,4 @@
-entrypoint = "14_Practice_Set_4.js"
+entrypoint = "2_Variables.js"
 modules = ["nodejs-20:v8-20230920-bd784b9"]
 hidden = [".config", "package-lock.json"]
 
@@ -12,6 +12,6 @@ channel = "stable-23_05"
 language = "nodejs"
 
 [deployment]
-run = ["node", "14_Practice_Set_4.js"]
+run = ["node", "2_Variables.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
