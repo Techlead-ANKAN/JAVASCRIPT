@@ -19,9 +19,15 @@ let e;
 let f = null;
 
 // 7. Symbol - unique value
-let g = Symbol("unique symbol");
+let g = Symbol("foo");
 
-console.log(a, b, c, d, e, f, g);
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+console.log(f);
+console.log(g);
 
 // typeof  - it is used to show the the type of the datatype
 console.log(typeof a); // string
@@ -32,8 +38,6 @@ console.log(typeof e); // undefined
 console.log(typeof f); // object
 console.log(typeof g); // symbol
 
-
-
 // Object (Non-Primitive Data type)
 
 // 8. Object - These are the data types that contains many "name : value" pairs separated by a coma.
@@ -41,11 +45,12 @@ const h = {
   name: "Ankan Maity",
   age: 20,
   gender: "Male",
+  arr: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 };
 
 console.log(h["name"]);
 console.log(h.age);
-
+console.log(h.arr);
 
 console.log(typeof h); // object
 
