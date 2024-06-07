@@ -1,5 +1,7 @@
 // Arrays in JavaScript
 
+const { arrayBuffer } = require("stream/consumers");
+
 // Arrays - In JavScript Arrays are variables which contains more than one items(of different types or of indentical types). they are mutable.
 
 let marks = [];
@@ -88,3 +90,96 @@ let arr2 = [
 ];
 let new_arr2 = arr2.flat();
 console.log(new_arr2);
+
+// 13)
+
+// (i) array.splice(dest_index, no.of items to be removed, new_items, new_items, ....)  --> It is used to add new elements to a particular index and can also remove any items from the dest_index if you want and returns the the deleted items.
+
+// (ii) array.toSpliced(dest_index, no.of items to be removed, new_items, new_items, ....)  --> Everything is same the only change is that it does not make any changes to the original array instead creates a new array.
+
+let ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let r2 = ar.toSpliced(5, 1, "ANKAN", "PIU"); //(ii)
+let r1 = ar.splice(3, 4, "Ankan", "Piu"); //(i)
+
+console.log(r1);
+console.log(ar);
+console.log(r2);
+
+// 14) array.slice(start, end)  --> used to slice a portion of the array from the starting index to the ending index.
+
+let char = ["a", "b", "c", "a", "d", "e"];
+console.log(char.slice(1, 3));
+
+// 15) array.indexOf(element)  --> Used to find the index of the element in array.
+
+console.log("Index of 'c': " + char.indexOf("c"));
+
+// 16) array.lastIndexOf(element)  --> Used to find the last index of the element in array.
+
+console.log("Last index of 'a': " + char.lastIndexOf("a"));
+
+// 17) array.includes(element)  -> Used to check if the element is present in the array.
+
+console.log(char.includes("c"));
+
+// 18)
+let num = [4, 8, 12, 9, 16, 20, 24, 28];
+
+// (i) array.find(test_function)  --> The find() method returns the value of the first array element that passes a test function.
+
+let first_ele = num.find(not_even);
+console.log(first_ele);
+
+function not_even(value, index, num) {
+    return value % 2 != 0;
+}
+
+// (ii) array.findIndex(test_function)  --> The findIndex() method returns the index of the first array element that passes a test function.
+
+let ind = num.findIndex(not_even);
+console.log(ind);
+
+function not_even(value, index, num) {
+    return value % 2 != 0;
+}
+
+// (iii) array.findLast(test_function)  --> the findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.
+
+const temp = [27, 41, 30, 40, 42, 35, 30];
+let high = temp.findLast((x) => x > 40);
+console.log(high);
+
+// (iv) array.findLastIndex(test_function)  --> the findLastIndex() method that will start from the end of an array and return the index of the first element that satisfies a condition.
+
+const temp1 = [27, 28, 30, 40, 42, 35, 30];
+let high1 = temp1.findLastIndex((x) => x > 40);
+console.log(high1);
+
+// 19)
+
+// (i) array.sort()  --> Sorts the array in ascending order.
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits);
+
+// (ii) array.toSorted()  --> Creates a new array and does not make any changes to the original array
+
+let frt1 = fruits.toSorted();
+console.log(frt1);
+
+// 20)
+
+// (i) array.sort()  --> Revreses the array.
+
+let fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+fruits2.reverse();
+console.log(fruits2);
+
+// (ii) array.toReversed()  --> Creates a new array and does not make any changes to the original array
+
+let frt2 = fruits2.toReversed();
+console.log(frt2);
+
+// 21)
