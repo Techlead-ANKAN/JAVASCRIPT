@@ -81,16 +81,20 @@ switch (condition)
 }
 */
 
-let x = "0";
+let x = 1;
+let text;
 switch (x) {
   case 0:
     text = "Off";
+    console.log("Text = " + text);
     break;
 
   case 1:
     text = "On";
+    console.log("Text = " + text);
     break;
 
   default:
     text = "No value found";
+    console.log("Text = " + text);
 }

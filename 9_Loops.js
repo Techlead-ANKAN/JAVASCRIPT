@@ -38,7 +38,7 @@ let const2 = {
 };
 
 for (let x in const2) {
-  console.log(x);
+  console.log(x + " = " + const2[x]);
 }
 
 console.log("\n");
