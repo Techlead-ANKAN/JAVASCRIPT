@@ -183,3 +183,103 @@ let frt2 = fruits2.toReversed();
 console.log(frt2);
 
 // 21)
+
+// (i) array.sort(function(a, b){return a - b})  --> returns the array in ascending order
+
+let points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+    return a - b;
+});
+
+console.log(points); // [ 1, 5, 10, 25, 40, 100 ]
+
+// (ii) array.sort(function(){return 1 - Math.random()})  --> returns the array in random order
+
+let points2 = [40, 100, 1, 5, 25, 10];
+
+points2.sort(function () {
+    return 0.5 - Math.random();
+});
+
+console.log(points2);
+
+// 22) Math.min.apply()  --> To find the lowest number in the numeric array.
+
+let roll = [2, 4, 6, 1, 3, 6, 7, 9];
+console.log(Math.min.apply(null, roll));
+
+// 23) Math.max.apply()  --> To find the highest number in the numeric array.
+
+let roll2 = [2, 4, 6, 1, 3, 6, 7, 9];
+console.log(Math.max.apply(null, roll2));
+
+// 24) array.forEach(function)  --> It is used to call a function once for each array element
+
+let numbers = [2, 4, 6, 1, 3, 6, 7, 9];
+let m = [];
+numbers.forEach(sample_func);
+
+function sample_func(value, index, array) {
+    m.push(value * 10);
+}
+
+console.log(m);
+
+// 25) array.map(function)  -> It is used to call a function once for each array element and creates a new array and does not make any changes to the original array.
+
+let numbers1 = [45, 4, 9, 16, 25];
+let numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+    return value * 2;
+}
+
+// 26) array.filter(test_function)  --> The filter() method creates a new array with array elements that pass a test.
+
+const x = [45, 4, 9, 16, 25];
+const over18 = x.filter(myFunction);
+console.log(over18);
+function myFunction(value, index, array) {
+    return value > 18;
+}
+
+// 27) array.reduce(test_function)  --> The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+const y = [45, 4, 9, 16, 25];
+let sum = y.reduce(myFunction);
+console.log(sum);
+function myFunction(total, value, index, array) {
+    return total + value;
+}
+
+// 28) array.reduceRight(test_function)  --> The reduce() method runs a function on each array element to produce (reduce it to) a single value. The reduceRight() works from right-to-left in the array. See also reduce().
+
+const z = [45, 5, 9, 16, 25];
+let sum2 = z.reduce(myFunction);
+console.log(sum2);
+function myFunction(total, value, index, array) {
+    return total + value;
+}
+
+// 29) array.every(test_function)  --> The every() method checks if all array values pass a test.
+
+const d = [45, 4, 9, 16, 25];
+let allOver18 = d.every(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 5;
+}
+
+// 30) array.some(test_function)  --> The some() method checks if some array values pass a test.
+
+const e = [45, 4, 9, 16, 25];
+let someOver18 = e.every(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 40;
+}
+
+// 31) Array.from(string)  --> The Array.from() method returns an Array object from any object with a length property or any iterable object.
+
+let xyz = Array.from("ANKAN LOVES PIU");
+console.log(xyz);
