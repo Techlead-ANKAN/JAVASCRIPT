@@ -283,3 +283,36 @@ function myFunction(value, index, array) {
 
 let xyz = Array.from("ANKAN LOVES PIU");
 console.log(xyz);
+
+//32) array.keys()  --> The Array.keys() method returns an Array Iterator object with the keys of an array.
+
+let array32 = ["Mango", "Apple", "Banana", "Grapes"];
+let res32 = array32.keys();
+for (let x of res32) {
+    console.log(x);
+}
+console.log("\n");
+
+// 33) array.entries()  --> The entries() method returns an Array Iterator object with key/value pairs
+
+let array33 = ["Mango", "Apple", "Banana", "Grapes"];
+let res33 = array33.entries();
+for (let x of res33) {
+    console.log(x);
+}
+
+// 34) array.with(key, value)  --> The with() method as a safe way to update elements in an array without altering the original array.
+
+let array34 = ["Jan", "Feb", "Mar", "Apr"];
+let res34 = array34.with(0, "Dec");
+console.log(res34);
+
+// 35) [...arr1, ...arr2, ...arr3, ........, ...arr(n) ]  --> The ... operator expands an iterable (like an array) into more elements
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+let res35 = [...q1, ...q2, ...q3, ...q4];
+console.log(res35);
