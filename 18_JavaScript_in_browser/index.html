@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>18_JavaScript_in_browser</title>
 </head>
+
 <body>
-    
+    <h1>JavaScript in Browser</h1>
+
+    <p id="p1">It is commonly used for creating web pages. It allows us to add dynamic behaviour and add special effects
+        to the webpages, bringing the web pages alive.</p>
+
+
+    <p id="p2"><b>JavaScript engines</b> are typically developed by web browser vendors, and every major browser has
+        one. In a browser, the JavaScript engine runs in concert with the "rendering engine" via the " Document Object
+        Model (DOM)" and Web IDL bindings. However, the use of JavaScript engines is not limited to browsers; for
+        example, the "V8 engine" is a core component of the Node.js runtime system.</p>
+
+    <p id="p3"><b>Rendering Engine</b> (Link - https://en.wikipedia.org/wiki/Browser_engine) <br>
+        A browser engine is a core software component of every major web browser. The primary job of a browser engine is
+        to transform HTML documents and other resources of a web page into an interactive visual representation on a
+        user's device.</p>
+
+
+    <p id="p4"><b>Documnet Object Model (DOM)</b>(Link - https://en.wikipedia.org/wiki/Document_Object_Model) <br>
+        The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an HTML or
+        XML document as a tree structure wherein each node is an object representing a part of the document. The DOM
+        represents a document with a logical tree. </p>
+
+    <p id="p5"><b>Web IDL</b> is an <b>Interface Description Language (IDL)</b> format for describing APIs (application
+        programming interfaces) that are intended to be implemented in web browsers. Its adoption was motivated by the
+        desire to improve the interoperability of web programming interfaces by specifying how languages such as
+        ECMAScript should bind these interfaces.</p>
+
+    <p id="p6"><b>Script Tag</b><br>The script tag is used to embed client side script (JavaScript). It either contains
+        scripting elements or it points to an external script file through the src attribute.
+
+        Note - Overall, there are many benefits to having a separate JavaScript file. It can improve the organization,
+        reusability, performance, readability, and maintainability of your website.</p>
+
+    <p id="p7"><b>Console Object</b><br>The console object provides acces to the browsers debugging console.
+        The console object is a property of the window object.</p>
+
+    <p id="p8">The console object can be accessed by :
+        <br>
+        1)<b>window.console</b>
+        <br>
+        <i>window.console.log("Using window.console");</i>
+
+        <br>
+        2) <b>console</b>
+        <br>
+        <i>console.log("Using console");</i>
+    </p>
+
+    <p id="p10"><b>JavaScript Interaction prompt(), alert(), confirm()</b><br>
+        Javascript allows us the privilege to which we can interact with the user and respond accordingly. It includes
+        several user-interface functions which help in the interaction. Let’s take a look at them one by one.
+        <br><br>
+        1) JavaScript Window alert() Method : It simply creates an alert box that may or may not have specified content
+        inside it, but it always comes with the ‘OK’ button. It simply shows a message and pauses the execution of the
+        script until you press the ‘OK’ button. The mini-window that pops up is called the ‘modal window’.
+    </p>
+    <button onclick="alert_func()">Show Alert</button>
+    <br>
+
+    <p id="p11">2) JavaScript Window prompt() Method: Prompt is another user-interface function that normally contains
+        two arguments.
+        <br>prompt('text', default value);
+        <br>The text is basically what you want to show the user and the default value argument is optional though it
+        acts like a placeholder inside a text field. It is the most used interface as with it you can ask the user to
+        input something and then use that input to build something.
+    </p>
+    <button onclick="prompt_func()">Show Prompt</button>
+
+    <p id="p12">3) JavaScript Window confirm() Method: The confirm function basically outputs a modal window with a
+        question and two buttons ‘OK’ and ‘CANCEL’.</p>
+    <button onclick="confirm_func()">Show Confirm</button>
+
+
+
 </body>
+
 </html>

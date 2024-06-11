@@ -84,3 +84,43 @@ for (let i = 0; i < 100000; i++) {
 }
 console.timeEnd();
 
+// 10) trace()  --> The trace() method displays a trace that shows how the code ended up at a certain point.
+
+function func1 (){
+    func2();
+}
+
+function func2(){
+    console.trace();
+}
+
+// JavaScript Interaction prompt(), alert(), confirm()
+
+// Javascript allows us the privilege to which we can interact with the user and respond accordingly. It includes several user-interface functions which help in the interaction. Let’s take a look at them one by one.
+
+// 1) JavaScript Window alert() Method : It simply creates an alert box that may or may not have specified content inside it, but it always comes with the ‘OK’ button. It simply shows a message and pauses the execution of the script until you press the ‘OK’ button. The mini-window that pops up is called the ‘modal window’.
+
+function alert_func(){
+    alert("This is an Alert Message");
+}
+
+
+// 2) JavaScript Window prompt() Method: Prompt is another user-interface function that normally contains two arguments.
+// prompt('text', default value);
+// The text is basically what you want to show the user and the default value argument is optional though it acts like a placeholder inside a text field. It is the most used interface as with it you can ask the user to input something and then use that input to build something.
+
+function prompt_func(){
+    prompt("This is a prompt()", "Did you understand?")
+}
+
+
+// 3) JavaScript Window confirm() Method: The confirm function basically outputs a modal window with a question and two buttons ‘OK’ and ‘CANCEL’.
+
+function confirm_func(){
+    confirm("This is a confirm message.");
+}
+
+
+console.log(window);
+
+window.console.log(document.body);
