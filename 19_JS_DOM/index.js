@@ -30,63 +30,234 @@
 
 
 
-// HTML DOM METHODS
+// ==========================  HTML DOM DOCUMENTS ==========================
 
-// The HTML DOM methods are actions you can perform on HTML elements.
+// (i) When an HTML Element is loaded into the browser it becomes an document object
 
-// The HTML DOM properties are values of HTML elements that you can set or change.
+// (ii) The Document object is the root node of the HTML Document
 
-// The HTML DOM can be accessed with JavScript and woth other programming Languages.
+// (iii) The document object is a property of the window object.
 
-// In the DOM, all HTML elements are defined as objects.
+// (iv) The document object is accessed with: "window.document" or "document"
 
-// The programming interface is the properties and methods of each object.
 
-// A property is a value that you can get or set (like changing the content of an HTML element).
 
-// A method is an action you can do (like add or deleteing an HTML element).
 
-// HTML DOM methods/properties are:
+//  Document object Properties and Methods: -
 
-// 1) getElementById("id") - It is a method that is used to access any html element by its id name.
+// 1) documnet.activeElement.tagName    ===>    It returns the HTML element that have focus. It is a read-only property.
+// let v1 = document.activeElement.tagName;
 
-function fnc1(){
-    console.log(document.getElementById("id1"));
-}
 
-function fnc2(){
-    document.getElementById("id1").innerText="DOM getElementById Method - It is a method that is used to access any html element by its id name.";
-}
+// 2) document.addEventListener("click", function())    ===>   This method add an event which is in the function to a folllowing action like click.
+// let v2 = document.addEventListener("click", function sample_func(){
+//                                              console.log("Clicked somewhere")
+//                                              });
 
-// 2) getElementsByClassName("class_name") - It is a method that is used to access any html element by its class name.
 
-function fnc3(){
-    console.log(document.getElementsByClassName("id2"));
-}
+// 3) document.adoptNode(node to be adopted)    ===>    This method adopts a node from another document in a iframe. The adopted node can be of all types. Any child 
+//                                                      nodes of the adopted node are also adopted. The adopted node is removed from the original document.
 
-function fnc4(){
-    document.getElementsByClassName("id2").innerText="DOM getElementByClassName Method - It is a method that is used to access any html element by its class name.";
-}
+// let frame = document.getElementById("myFrame")   ---> Getting the frame(another document from which node will be adopted).
+// let ele = frame.contentWindow.document.getElementByTagName("H1")[2]  --->    Now the 3rd H1 tag element will be considered as the adopted node and will be stored 
+//                                                                              in the variable "ele".
+// let node = document.adoptNode(ele);      ---> Now the desired is adopted and stored in the variable "node" adn you can can place it anywhere in your new website.
 
-// 3) getElementsByName("name") - It is a method that is used to access any html element by its name.
 
-function fnc5(){
-    console.log(document.getElementsByName("id3"));
-}
+// 4) document.baseURI  ===>    The read-only baseURI property of the node interface returns the absolute base URL of the document containing the node.
+// console.log(document.baseURI);
 
-function fnc6(){
-    document.getElementsByName("id3").innerText="DOM getElementByClassName Method - It is a method that is used to access any html element by its class name.";
-}
 
-// 4) getElementsByTagName("tag_name") - It is a method that is used to access any html element by its tag name.
+// 5) document.body     ===>    The body property sets or returns a document's <body> element.
+// let var3 = document.body.innerHTML;  --> returns the html of the body
+// let var4 = document.body.style.backgroundColor = "blue";
+// let var5 = document.body.innerHTML = "<h1>new HTML Content</h1>";
 
-function fnc7(){
-    console.log(document.getElementsByTagName("h3"));
-}
 
-function fnc8(){
-    document.getElementsByName("h3").innerText="DOM getElementByTagName Method - It is a method that is used to access any html element by its tag name.";
-}
+// 6) document.characterSet     ===>    This method returns the character encoding of the document.
+// console.log(document.characterSet);
+
+
+// 7) document.open()   ===>    This method opens a document(new html) for writing.
+// 8) documnet.write(html)    ===>      This method is used to write html is a document.
+// 9) document.close()   ===>   This method is used to close the document that was previously being opened with open().
+
+// document.open();
+// document.write("<h1>Heading</h1>");
+// document.close();
+
+
+// 10) document.writeln(html)   ===> This is method is same as of write() in addition it uses newline for each sentence
+// document.writeln("<h1>Heading</h1>");
+
+
+// 11) document.cookie  ===>    This property sets or returns a semi-colon-separated list of key=value pairs (document cookies)
+
+// (i) Creating Cookies:
+// document.cookies = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+// (ii) Getting Cokkies:
+// console.log(document.cookie);
+
+
+// 12) (i) document.createAttribute("new_attribute")    ===>    This methods creates an attribute and returns an attribute as an Attr object.
+// let att = document.createAttribute("class");
+// att.value = "myClass";
+
+// (ii) element.setAttributeNode(att)  ===>    It is used to set an attribute to a particular element.
+// element.setAttributeNode(att);
+
+
+// 13) document.createComment("My Comments")    ===>    It is used to create comments and returns the comment node
+// let cmnt = document.createComment("This is a comment");
+// document.body.appendChild(cmnt);
+
+
+// 14) document.createElement("html_tag")   ===>    It is used to create html element node.
+// let ele = document.createElement("a");
+// ele.innerHTML = "https://www.w3schools.com";
+// ele.href = "https://www.w3schools.com";
+
+
+// 15) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
