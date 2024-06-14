@@ -119,9 +119,17 @@
 // ele.href = "https://www.w3schools.com";
 
 
-// 15) 
+// 15) document.createDocumentFragment()    ===>    It is used to create a node that can be used to build a document fragment which can be inserted in any document.
+
+// let x = document.createDocumentFragment();
+// let arr = ['Ankan', 'Piu', 'Yash'];
+
+// x.append((document.createElement("h2")).innerHTML = arr[0]);
+// x.append((document.createElement("h2")).innerHTML = arr[1]);
+// x.append((document.createElement("h2")).innerHTML = arr[2]);
 
 
+// 16) 
 
 
 
