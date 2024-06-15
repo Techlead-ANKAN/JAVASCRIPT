@@ -129,26 +129,123 @@
 // x.append((document.createElement("h2")).innerHTML = arr[2]);
 
 
-// 16) 
+// 16) createTextNode("text")   ===>    This method is used to create an element that consist of text only.
+// let v16 = document.createTextNode("This is a text node.");
+// document.appendChild(v16);
+
+
+// 17) document.defaultView  ===>    This method returns the window object or null if none is availabale.
+// let v17 = document.defaultView;
+// let ht = v17.innerHeight;
+// let wt = v17.innderWidth;
+// console.log(ht);
+// console.log(wt);
+
+
+// 18) document.designMode  ===> It is used to return 'on' or 'off' whether the document is editable or not. you can also set the document to any mode by assigning on or off.
+// console.log(document.designMode);
+// document.designMode = 'on';
+// console.log(document.designMode);
+
+
+// 19) (i) document.doctype     ===>    The doctype property returns a document's doctype. It returns null if the document has no 
+//                                      doctype. It is read-only.
+// console.log(document.doctype);  --> It returns <!DOCTYPE html>
+
+// (ii) document.doctype.name   ===>    It returns the name of the doctype
+// console.log(document.doctype.name);  --> It returns "html"
+
+
+// 20) document.documentElement.nodeName    ===>    It returns a documents element (as an element object). It is read-only.
+// console.log(document.documentElement.nodeName);     --> It returns "HTMl"
+
+
+// 21) document.documentURI;    ===>    It is a read-only property that returns a documents location.
+// console.log(document.documentURI);
+
+
+// 22) document.domain      ===>    It returns the domain name of the server that is loaded into the browser. It returns null if the domain was created in memeory.
+// console.log(document.domain);
+
+
+// 23) (i) document.forms.length    ===>    It returns the no.of form elements used in the document.
+// console.log(document.forms.length);
+
+// (ii) document.forms[index].<attribute>   ===>    It  returns the value of the attribute of the indexth form element.
+
+
+// 24) document.hasFocus()  ===>    It returns true if the document has focus otherwise false.
+// console.log(document.hasFocus());
+
+
+// 25) (i) document.images  ===>    This property returns the collection of all <img> elements in a document.
+// console.log(document.images);
+
+// (ii) document.images[0].src  ===>    The url of the first <img> element.
+
+
+// 26) document.importNode(<node>, deep)    ===>    This method can import any node from any other document in the frame. If "deep" is set to "true" then all the child nodes of the node will also be imported, if "false" then only the node will be imported.
+
+// let fm = document.getElementById("myFrame");
+// let v26 = frame.contentWindow.document.getElementById("h1")[0];
+// let node = document.importNode(v26, true)
+
+
+// 27) document.lastModified    ===>    It is a read-only property that returns the date and time the document was modified last.
+// console.log(document.lastModified);  // returns a string
+
+// let obj = new Date(document.lastModified)  // it creates date object
+
+
+// 28) (i) document.links  ===>    This property returns the collection of all links in a document.
+// console.log(document.links);
+
+// (ii) document.images[0].src  ===>    The url of the first <img> element.
+
+// (iii) document.links.length  ===>    It returns the no.of links present in the document.
+
+
+// 29) document.normalize()     ===>    This method removes empty text nodes and joins adjacent text nodes.
+// document.normalize();
+
+
+// 30) 
+// (i) document.querySelector("<css selectors>")    ===>    This method returns the first element that matches the CSS Selector
+// document.querySelector("#myId").computedStyleMap.backgroundColor='red';
+
+// (ii) document.querySelectorAll("<css selector>")     ===>    This method returns the all elements that matches the CSS Selector
+// document.querySelectorAll("#myId").computedStyleMap.backgroundColor='blue';
+
+
+// 31) document.readyState      ===>    This method returns the moading status of the document in the browser.
+// console.log(document.readyState);
+
+
+// 32) document.referrer    ===>    This read-only property returns the URL of the document that loaded the current document.
+// console.log(document.referrer);
+
+
+// 33) (i) document.scripts  ===>    This property returns the collection of all scripts in a document.
+// console.log(document.scripts);
+
+// (ii) document.scripts[0].text  ===>    The text of the first script element.
+
+// (iii) document.scripts.length  ===>    It returns the no.of scripts present in the document.
 
 
 
+// 34) document.title   ===>    This method sets or returns the title of the document.
+
+// (i) Getting title: 
+// console.log(document.title);
+
+// (ii) setting title: 
+// document.title = "New Title";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 35) document.URL     ===>    Returns the full url of the document.
+// console.log(document.URL);
 
 
 

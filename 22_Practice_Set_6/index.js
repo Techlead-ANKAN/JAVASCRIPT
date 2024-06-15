@@ -73,5 +73,5 @@
 
 // 5) Change the background color of the page to different colors based on user input through prompt.
 
-let color = prompt("Enter the page background color")
-document.body.style.backgroundColor = color
+let ele = document.getElementByTagName("body");
+ele.style.backgroundColor = "red";
