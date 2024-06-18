@@ -30,7 +30,7 @@
 
 
 
-// ==========================  HTML DOM DOCUMENTS ==========================
+//==========================  HTML DOM DOCUMENTS ( Link: https://www.w3schools.com/jsref/dom_obj_document.asp )==========================
 
 // (i) When an HTML Element is loaded into the browser it becomes an document object
 
@@ -255,25 +255,131 @@
 
 
 
+//========================== HTML DOM ELEMENT OBJECTS( Link: https://www.w3schools.com/jsref/dom_obj_all.asp ) ==========================
+
+
+// In HTML DOM, the element object represents an HTML element like 'p', 'div', 'a', 'table', .... or any other HTML element.
+
+
+// Properties and Methods that can be used by any HTML Element: 
+
+
+// 1) document.<element>.accessKey  ===>    This property sets or returns the shortcut key to an element. You have to press the accessKey along with 'Alt' button.
+// (i) Setting: 
+//    document.getElementById("myid").accessKey = 'w';     
+// (ii) Getting:
+// console.log(document.getElmentByClassName("myclass").accessKey);
+
+
+
+// 2) document.<element>.addEventListener("event", function() {action to perform})  ===>    This method is used to add an action to any element when a particular event occurs.
+
+// document.getElementById("myId").addEventListener("click", function action(){
+//    document.getElementById("target_id").innerHTML="New Text";
+// });
+
+
+
+// 3) document.<element>.appendChild(element)  ===> This method is used to append an element or child or node at last.
+
+// let node = document.createElement("a");
+// let text = document.createTextNode("This is a link");
+// node.appendChild(text);
+// document.getElementById("myid").appendChild(node);
+
+
+
+// 4) document.<element>.attributes ===> This property returns a collection of attribuites in an element.
+
+// let atts = document.getElementById("myid").attributes;
+// console.log(atts);   // Shows the collection of attributes
+
+
+// Traversing all the attributes :
+// for (let i = 0; i < atts.length; i++) {
+//     let text = "";
+//     text += atts[i].name + " = " + atts[value] + "<br>";
+//     console.log(text);
+//     text = "";
+// }
+
+
+
+// 5) document.<element>.focus()    ===>    This method is used to gain focus to an element.
+
+/* <input type="text" id="myid"></input>
+document.getElementById("myid").focus(); */
+
+
+
+// 6) document.<element>.blur()    ===>    This method is used to remove focus from an element.
+
+/* <input type="text" id="myid"></input>
+document.getElementById("myid").blur(); */
+
+
+
+// 7) document.<element>.childElementCount  ===>    It is a read-only property that returns the number of child elements of an element. It returns the same as children.length.
+
+// console.log(document.getElementsByClassName("myclass").childElementCount);
+
+
+
+// 8) document.<element>.childNodes ===>    It is a read-only property that returns a collection of the child nodes of an element.
+
+// console.log(document.getElementById("myid").childNodes);
+
+
+
+// 9) document.<element>.children   ===>    This property returns a collection of all the children of an element.
+// console.log(document.body.children);
+
+
+
+// 10) document.<element>.classList ===>    This property the CSS classnames of an element. It returns a DOMTokenList.
+// console.log(document.getElementById("myid"));
+
+
+// 11) document.<element>.className ===>    It is used to set or return the class name of an element.
+
+// console.log(document.getElementById("myid").className);  getting class name of an element
+
+// document.getElementById("myid").className = "myclass";   setting class name of an element
+
+
+
+// 12) document.<element>.clientHeight  ===>    It is a read-only property that returns the veiwable height of the element in pixels including padding, excluding border, scrollbar, margin.
+
+// console.log(document.getElementById("myid").clientHeight);
 
 
 
 
+// 13) document.<element>.clientWidth  ===>    It is a read-only property that returns the veiwable width of the element in pixels including padding, excluding border, scrollbar, margin.
+
+// console.log(document.getElementById("myid").clientWidth);
+
+
+// 14) document.<element>.clientLeft    ===>    It is a read-only property that returns the width of the element's left border in pixels excluding left padding or left margin.
+
+// console.log(document.getElementById("myid").clientLeft);
 
 
 
+// 15) document.<element>.clientRight    ===>    It is a read-only property that returns the width of the element's right border in pixels excluding right padding or right margin.
+
+// console.log(document.getElementById("myid").clientRight);
 
 
 
+// 16) document.<element>.cloneNode(deep: true | false)     ===>    This method is used to clone a node. If the deep option is set to true then it will copy all it's children nodes also otherwise it would not.
+
+// let node = document.getElementById("mydiv");
+// let clone = node.cloneNode(true);
 
 
 
-
-
-
-
-
-
+// 17) 
 
 
 
