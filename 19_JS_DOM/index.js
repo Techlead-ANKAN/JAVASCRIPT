@@ -306,27 +306,23 @@
 
 
 // 5) document.<element>.focus()    ===>    This method is used to gain focus to an element.
-
 /* <input type="text" id="myid"></input>
 document.getElementById("myid").focus(); */
 
 
 
 // 6) document.<element>.blur()    ===>    This method is used to remove focus from an element.
-
 /* <input type="text" id="myid"></input>
 document.getElementById("myid").blur(); */
 
 
 
 // 7) document.<element>.childElementCount  ===>    It is a read-only property that returns the number of child elements of an element. It returns the same as children.length.
-
 // console.log(document.getElementsByClassName("myclass").childElementCount);
 
 
 
 // 8) document.<element>.childNodes ===>    It is a read-only property that returns a collection of the child nodes of an element.
-
 // console.log(document.getElementById("myid").childNodes);
 
 
@@ -341,65 +337,79 @@ document.getElementById("myid").blur(); */
 
 
 // 11) document.<element>.className ===>    It is used to set or return the class name of an element.
-
 // console.log(document.getElementById("myid").className);  getting class name of an element
-
 // document.getElementById("myid").className = "myclass";   setting class name of an element
 
 
 
 // 12) document.<element>.clientHeight  ===>    It is a read-only property that returns the veiwable height of the element in pixels including padding, excluding border, scrollbar, margin.
-
 // console.log(document.getElementById("myid").clientHeight);
 
 
 
 
 // 13) document.<element>.clientWidth  ===>    It is a read-only property that returns the veiwable width of the element in pixels including padding, excluding border, scrollbar, margin.
-
 // console.log(document.getElementById("myid").clientWidth);
 
 
 // 14) document.<element>.clientLeft    ===>    It is a read-only property that returns the width of the element's left border in pixels excluding left padding or left margin.
-
 // console.log(document.getElementById("myid").clientLeft);
 
 
 
 // 15) document.<element>.clientRight    ===>    It is a read-only property that returns the width of the element's right border in pixels excluding right padding or right margin.
-
 // console.log(document.getElementById("myid").clientRight);
 
 
 
 // 16) document.<element>.cloneNode(deep: true | false)     ===>    This method is used to clone a node. If the deep option is set to true then it will copy all it's children nodes also otherwise it would not.
-
 // let node = document.getElementById("mydiv");
 // let clone = node.cloneNode(true);
 
 
 
-// 17) 
+// 17) document.<element>.closest("<css selector>")     ===>    This method searches up the DOM tree for elements which matches a specified CSS Selector and returns that element. It starts from the element itself then the ancestors untill a match is found. Returns null is no mathc is found.
+// console.log(document.getElementById("mydiv").closest("#mydiv"));
+
+
+// 18) <ele1>.compareDocumentPosition(<ele2)    ===>    This method compares the position of ele1 and ele2 in the document.
+// Possible Values: 
+// 1: The two nodes do not belong to the same document.
+// 2: p1 is positioned after p2.
+// 4: p1 is positioned before p2.
+// 8: p1 is positioned inside p2.
+// 16: p2 is positioned inside p1.
+// 32: The two nodes are attributes on the same element.
+
+// const p1 = document.getElementById("p1").lastChild;
+// const p2 = document.getElementById("p2").lastChild;
+// let position = p1.compareDocumentPosition(p2);
+
+
+// 19) <ele1>.contains(<ele2>)  ===>    This method returns true if the ele1 node contains ele2 node, otherwise returns false.
+// console.log(document.getElementById("myDIV").contains(document.getElementById("mySPAN")));
+
+
+// 20) document.<element>.contentEditable   ===>    This property is used to set or return if the content is editable or not.
+// (i) setting:
+// document.getElementById("myP").contentEditable = "true";
+
+// (ii) getting: 
+// console.log(document.getElementById("myP").contentEditable);
 
 
 
+// 21) document.<element>.dir   ===> This property is used to set or return the text direction.
+                // ltr --> left to right (default)
+                // rtl --> right to left
+                // auto --> Lets the  browser figure out.
+// (i) getting:
+// console.log(document.getElmentById("myp").dir);
+// (ii) setting:
+// document.getElmentById("myp").dir = "ltr|rtl|auto"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 22) 
 
 
 
