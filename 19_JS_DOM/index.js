@@ -409,22 +409,142 @@ document.getElementById("myid").blur(); */
 // document.getElmentById("myp").dir = "ltr|rtl|auto"
 
 
-// 22) 
+
+// 22) document.<element>.firstChild   ===>     It is a read-only property that returns the first child node of a node, saem as childNodes[0]. 
+// firstChild returns the first child node: An element node, a text node, or a comment node. Whitespace between elements are also text nodes.
+// console.log(document.getElementById("myId").firstChild.innerHTML);
 
 
 
+// 23) document.<element>.firstElementChild     ===>    It is a read only property that returns the first child element of the specified element. same as children[0]. It ignores text and comment nodes.
+// console.log(document.getElementById("myId").firstElementChild.innerHTML);
 
 
 
+// 24) document.<element>.focus()   ===>    This method is used to give focus to an element if and only if it can be focused.
+// document.getElementById("myId").focus();
 
 
 
+// 25) document.<element>.blur()   ===>    This method is used to remove focus from an element.
+// document.getElementById("myId").blur();
 
 
 
+// 26) document.<element>.getAttibute("<attribute_name>")  ===>    This method returns the value of an elements attribute.
+// console.log(document.getElementById("myId").getAttribute("href/id/class/... etc"));
 
 
 
+// 27) document.<element>.getAttributeNode("href/id/class/... etc")     ===>    This methods returns the attribute object and when used with ".value" then it gives us the avlue of the attribute.
+
+// let attr = document.getElementByTagName("H1").getAttributeNode("class")
+// console.log(attr);   -- It returns the attribute object that contains the class name of the element
+
+// console.log(attr.value);   -- It returns the value of the attribute object that contains the class
+
+
+
+// 28) document.<element>.hasAttirubte()    ===>    This method returns the true if the attribute exeists for that particular specified element.
+// console.log(document.getElementById("myId").hasAttirubte("href"));   
+
+
+
+// 29) document.<element>.hasAttributes()   ===>    This methods returns true if a node has attributes otherwise false.
+// console.log(document.getElementById("myId").hasAttributes());
+
+
+
+// 30) document.<element>.hasChildNodes()   ===>    This method returns true if the specified elements has any child nodes otherwise false.
+// console.log(document.getElementById("myId").hasChildNodes());
+
+
+
+// 31) document.<element>.id    ===>    This property is used to set or return the attribute value of an element.
+// (i) getting: 
+// console.log(document.getElementById("democlass").id)     - returns the id
+// (ii) setting: 
+// document.getElementById("democlass").id = "newid"    - sets the new id
+
+
+
+// 32) document.<element>.innerHTML     ===>    This method is used to return or set the HTML content (inner HTML) of an element.
+// (i) getting:
+// console.log(document.getElementById("myid").innerHTML);
+// (ii) setting:
+// document.getElementById("myid").innerHTML = "This is my new innerHTML content."
+
+
+
+// 33) document.<element>.innerText     ===>    This method is used to return or set the text content of an element.
+// (i) getting:
+// console.log(document.getElementById("myid").innerText);
+// (ii) setting:
+// document.getElementById("myid").innerText = "This is my new innerHTML content."
+
+
+
+// 34) ele1.insertAdjacentElement("position", ele2)     ===>    This method is used to insert ele2 intoa specified position.
+// positions: 
+// 1) afterbegin --->	After the beginning of the element (first child)
+// 2) afterend	 --->   After the element
+// 3) beforebegin --->   Before the element
+// 4) beforeend	--->   Before the end of the element (last child)
+
+
+// const span = document.getElementById("mySpan");
+// const h2 = document.getElementById("myH2");
+// h2.insertAdjacentElement("afterbegin | afterend | beforebegin | beforeend", span);
+
+
+
+// 35) element.insertAdjacentHTML("position", html)     ===>    This method is used to insert an HTML code snippet into a specified position.
+// positions: 
+// 1) afterbegin --->	After the beginning of the element (first child)
+// 2) afterend	 --->   After the element
+// 3) beforebegin --->   Before the element
+// 4) beforeend	--->   Before the end of the element (last child)
+
+// const h2 = document.getElementById("myH2");
+// const newhtml = "<p>This is a new paragraph.</p>"
+// h2.insertAdjacentHTML("afterbegin | afterend | beforebegin | beforeend", newhtml);
+
+
+
+// 36) element.insertAdjacentText("position", text)     ===>    This method is used to insert a text into a specified position.
+// positions: 
+// 1) afterbegin --->	After the beginning of the element (first child)
+// 2) afterend	 --->   After the element
+// 3) beforebegin --->   Before the element
+// 4) beforeend	--->   Before the end of the element (last child)
+
+// const h2 = document.getElementById("myH2");
+// const newtext = "New Text."
+// h2.insertAdjacentText("afterbegin | afterend | beforebegin | beforeend", newtext);
+
+
+
+// 37) document.getElementById("myid").isContentEditable    ===>    This property returns true if the html element is editable otherwise false.
+// console.log(document.getElementById("myid").isContentEditable); 
+
+
+
+// 38) item1.isEqualNode(item2)     ===>    This method returns true if botha the elements are same, otherwise false.
+// var item1 = document.getElementById("myList1").firstChild;
+// var item2 = document.getElementById("myList2").firstChild;
+// var x = item1.isEqualNode(item2);
+
+
+
+// 39) document.<element>.lang  ===>    This propertry is used to set or return the value of the "lang" attribute of the element.
+// (i) setting:
+// document.getElementById("myP").lang = "ar";
+// (ii) getting:
+// console.log(document.getElementById("myP").lang); 
+
+
+
+// 40) 
 
 
 
