@@ -544,61 +544,117 @@ document.getElementById("myid").blur(); */
 
 
 
-// 40) 
+// 40) document.<element>.lastChild     ===>    It is a read-only property that returns the last child node of an element.
+// console.log(document.getElementById("myList").lastChild);
+
+
+
+// 41) document.<element>.lastElementChild     ===>    It is a read-only property that returns the last child element of an element.
+// console.log(document.getElementById("myList").lastElementChild);
+
+
+
+// 42) <element>.matches(<css selectors>)   ===>    This method returns true if an element matches a a+specific css selector.
+// console.log(document.getElementById("myP").matches(".p"));
+
+
+
+// 43) document.<element>.nextSibling   ===>    It is a read-only property that returns the next node of the same tree level.
+// console.log(document.getElementById("myList").nextSibling);
+
+
+
+// 44) document.<element>.nextElementSibling   ===>    It is a read-only property that returns the next element of the same tree level.
+// console.log(document.getElementById("myList").nextElementSibling);
+
+
+
+// 45) document.<element>.nodeName  ===> The nodeName is a read-only property that returns the name of a node:
+                                            // The tagname (in upper case) for element nodes
+                                            // The attribute name for attribute nodes
+                                            // #text for text nodes
+                                            // #comment for comment nodes
+                                            // #document for document node
+
+// document.getElementById("myP").nodeName;
 
 
 
 
+// 46) document.<element>.nodeType  ===> The nodeType is a read only property that returns the node type, as a number, of the specified node.
+                                        // If the node is an element node, the nodeType property will return 1.
+
+                                        // If the node is an attribute node, the nodeType property will return 2.
+
+                                        // If the node is a text node, the nodeType property will return 3.
+
+                                        // If the node is a comment node, the nodeType property will return 8.
+
+// document.getElementById("myP").nodeType;
 
 
 
+// 47) document.<element>.normalize()   ===>    The normalize() method removes empty text nodes, and joins adjacent text nodes.
+// document.getElementById("demo").normalize();
 
 
 
+// 48) document.<element>.offsetHeight  ===>    The offsetHeight property returns the viewable height of an element (in pixels), including padding, border and scrollbar, but not the margin. The offsetHeight property id read-only.
+// console.log(document.getElementById("mydiv").offsetHeight);
+                                        
+
+
+// 49) document.<element>.offsetWidth  ===>    The offsetHeight property returns the viewable width of an element (in pixels), including padding, border and scrollbar, but not the margin. The offsetWidth property id read-only.
+// console.log(document.getElementById("mydiv").offsetWidth);
+
+
+// 48) document.<element>.offsetHeight  ===>    The offsetHeight property returns the viewable height of an element (in pixels), including padding, border and scrollbar, but not the margin. // The offsetHeight property id read-only.
+// console.log(document.getElementById("mydiv").offsetHeight);
 
 
 
+// 49) document.<element>.offsetLeft  ===>    The offsetLeft is a read-only property that returns the left position (in pixels) relative to the parent.
+// The returned value includes:
+
+// the left position, and margin of the element
+// the left padding, scrollbar and border of the parent
+// console.log(document.getElementById("mydiv").offsetLeft);
 
 
 
+// 50) document.<element>.offsetParent  ===>    The offsetParent property returns the nearest ancestor that has a position other than static. The offsetParent property returns null if the element is not visible (display="none").
+// console.log(document.getElementById("mydiv").offsetParent);
 
 
 
+// 51) document.<element>.offsetTop  ===>    The offsetTop is a read-only property that returns the Top position (in pixels) relative to the parent.
+// The returned value includes:
+
+// the top position, and margin of the element
+// the top padding, scrollbar and border of the parent
+// console.log(document.getElementById("mydiv").offsetTop);
 
 
 
+// 52) document.<element>.outerHTML     ===>    This property sets or returns the HTML element including attributes, start tag, and end tag.
+// (i) getting:
+// console.log(document.getElementsByTagName("h2")[0].outerHTML);
+// (ii) setting:
+// document.getElementsByTagName("h2")[0].outerHTML = "<b>This is the changed HTML</b>"
 
 
 
+// 53) document.<element>.outerText     ===>    TThe outerText property sets or returns the text content of the specified node.
+// (i) getting:
+// console.log(document.getElementsByTagName("h2")[0].outerHTML);
+// (ii) setting:
+// document.getElementsByTagName("h2")[0].outerHTML = "This is the changed HTML";
 
 
 
+// 54) document.<element>.ownerDocument     ===>    This property returns the owner document of a node as a document object. In HTMl, the HTML object is itself is always teh ownerDocument of an element.
+// console.log(document.getElementsByTagName("h2")[0].ownerDocument);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 55) 
