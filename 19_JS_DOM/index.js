@@ -554,7 +554,7 @@ document.getElementById("myid").blur(); */
 
 
 
-// 42) <element>.matches(<css selectors>)   ===>    This method returns true if an element matches a a+specific css selector.
+// 42) <element>.matches(<css selectors>)   ===>    This method returns true if an element matches a specific css selector.
 // console.log(document.getElementById("myP").matches(".p"));
 
 
