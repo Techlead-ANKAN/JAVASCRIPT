@@ -346,6 +346,7 @@ document.getElementById("myid").blur(); */
 // console.log(document.getElementById("myid").clientHeight);
 
 
+// Link: https://stackoverflow.com/questions/22675126/what-is-offsetheight-clientheight-scrollheight
 
 
 // 13) document.<element>.clientWidth  ===>    It is a read-only property that returns the veiwable width of the element in pixels including padding, excluding border, scrollbar, margin.
@@ -602,14 +603,11 @@ document.getElementById("myid").blur(); */
 // 48) document.<element>.offsetHeight  ===>    The offsetHeight property returns the viewable height of an element (in pixels), including padding, border and scrollbar, but not the margin. The offsetHeight property id read-only.
 // console.log(document.getElementById("mydiv").offsetHeight);
                                         
-
+// Link: https://stackoverflow.com/questions/22675126/what-is-offsetheight-clientheight-scrollheight
 
 // 49) document.<element>.offsetWidth  ===>    The offsetHeight property returns the viewable width of an element (in pixels), including padding, border and scrollbar, but not the margin. The offsetWidth property id read-only.
 // console.log(document.getElementById("mydiv").offsetWidth);
 
-
-// 48) document.<element>.offsetHeight  ===>    The offsetHeight property returns the viewable height of an element (in pixels), including padding, border and scrollbar, but not the margin. // The offsetHeight property id read-only.
-// console.log(document.getElementById("mydiv").offsetHeight);
 
 
 
@@ -657,4 +655,66 @@ document.getElementById("myid").blur(); */
 
 
 
-// 55) 
+// 55) document.<element>.parentNode    ===>    It is a read-only property that is used to return the parent node of an element or a node.
+// console.log(document.getElementsByClassName("mydiv").parentNode.outerHTML);
+
+
+
+// 56) document.<element>.parentElement   ===>    It is a read-only property that is used to return the parent node of an element or a node. Returns "NULL" if the element has no parent.
+// console.log(document.getElementsByClassName("mydiv").parentElement.outerHTML);
+
+
+
+// 57) document.<element>.previousSibling   ===>    It is a read-only property that returns the previous node on the same tree level.
+// console.log(document.getElementById("item2").previousSibling.innerHTML);
+
+
+
+// 58) document.<element>.previousElementSibling   ===>    It is a read-only property that returns the previous node on the same tree level. Returns "NULL" if the element has no previous sibling.
+// console.log(document.getElementById("item2").previousElementSibling.innerHTML);
+
+
+
+// 59) document.<element>.querySelector(<css_selector>)     ===>    This method returns the first child element that matches a specified CSS Selector of ana element.
+// console.log(document.getElementById("mydiv").querySelector(".example").innerHTML);
+
+
+
+// 60) document.<element>.querySelectorAll(<css_selector>)     ===>    This method returns all child elements that matches a specified CSS Selector of ana element.
+// console.log(document.getElementById("mydiv").querySelectorAll(".example").innerHTML);
+
+
+
+// 61) document.<element>.remove()  ===>    This method is used to remove an element from the document
+// document.getElementById("mydiv").remove();
+
+
+
+// 62) document.<element>.removeAttribute("<attribute>")    ===>    This method is used to remove attribute of an element.
+// document.getElementById("myanchor").removeAttribute("href");
+
+
+// 63) document.<element>.removeAttributeNode("<attribute>")    ===>    This method is used to remove attribute of an element.
+// document.getElementById("myanchor").removeAttributeNode("href");
+
+
+
+// 64) document.<element>.removeChild("child")  ===>    This method is used to remove a child of an element.
+// const list = document.getElementById("myList");
+// list.removeChild(list.children[1]);
+
+
+
+// 65) document.<element>.removeEventListener("event", function)    ===>    This method remove an event handler from an element.
+// myDIV.removeEventListener("mousemove", myFunction);
+
+
+
+// 66) <element>.replaceChild(newnode, oldnode)     ===>    This method is used to replace a child node with new node.
+// const newNode = document.createTextNode("Water");
+// const element = document.getElementById("myList").children[0];
+// element.replaceChild(newNode, element.childNodes[0]);
+
+
+
+// 67) 
