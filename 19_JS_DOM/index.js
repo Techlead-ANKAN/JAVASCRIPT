@@ -717,4 +717,28 @@ document.getElementById("myid").blur(); */
 
 
 
-// 67) 
+// 67) document.<element>.scrollHeight  ===>     It is a read only property that returns the height of an element in pixels including padding, excluding borders, scrollbars and margins.
+// const element = document.getElementById("content");
+// let x = element.scrollHeight;
+
+
+
+// 68) document.<element>.scrollWidth  ===>     It is a read only property that returns the width of an element in pixels including padding, excluding borders, scrollbars and margins.
+// const element = document.getElementById("content");
+// let y = element.scrollWidth;
+
+
+
+// 69) document.<element>.scrollLeft  ===>     It is a property that sets or returns the number of pixels an element's content is scrolled horizontally.
+// const element = document.getElementById("myDIV");
+// element.scrollLeft = 50;
+
+
+
+// 70) document.<element>.scrollLeft  ===>     It is a property that sets or returns the number of pixels an element's content is scrolled vertyically.
+// const element = document.getElementById("myDIV");
+// element.scrollTop = 50;
+
+
+
+// 71) 
