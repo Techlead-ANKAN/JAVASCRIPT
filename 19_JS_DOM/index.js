@@ -741,4 +741,60 @@ document.getElementById("myid").blur(); */
 
 
 
-// 71) 
+
+
+//========================== HTML DOM ATTRIBUTES( Link: https://www.w3schools.com/jsref/dom_obj_attributes.asp ) ==========================
+
+
+// In HTML DOM, an "Attr" object represents an HTML Attribute.
+
+
+// 1) document.<element>.<attribute_Node>.value     ===>    This method is used to set or return the value of the attribute of the particular element.
+// (i) getting: 
+// console.log(document.getElementById("myanchor").getAttributeNode("href").value);
+// (ii) setting:
+// document.getElementById("myanchor").getAttributeNode("href").value = "https://www.w3schools.com/jsref/prop_attr_value.asp";
+
+
+
+// 2) document.<element>.attributes.getNamedItem("attribute_name")  ===>   This method returns an attribute node from a NamedNodeMap object.
+// console.log(document.getElementById("light").attributes.getNamedItem("src").value)
+
+
+
+// 3) document.<element>.attributes[index]  ===>    This method returns an attribute (by index) from a namedNodeMap
+// const nodeMap = document.getElementById("myDiv").attributes;
+// console.log(nodeMap.item(0).name);
+// console.log(nodeMap.item(1).value);
+
+
+
+// 4) document.<element>.attributes.length  ===>    It is a read only property that returns the number of nodes in a NamedNodeMap.
+// console.log(document.getElementById("myButton").attributes.length);
+
+
+
+// 5) document.<element>.attributes[index].name     ===>    It is a read only property that returns the name of an attribute.
+// console.log(document.getElementById("myDiv").attributes[1].name);
+
+
+
+// 6) document.getElementById("myInput").attributes.removeNamedItem("attribute_name")   ===> This method is used to remove an attribute node (by name) in a NamedNodeMap.
+// const nodeMap = document.getElementById("myInput").attributes;
+// nodeMap.removeNamedItem("type");
+
+
+
+// 7) <nodemap>.setNamedItem(<newnode>)     ===>    This method adds an attribute node to the NamedNodeMap. If the attribute node already exists, then it will be replaced, and the replaced attribute node will be returned otherwise the return value is "null".
+// const nodeMap = document.getElementsByTagName("H1")[0].attributes;
+// const node = document.createAttribute("class");
+// node.value = "democlass";
+// nodeMap.setNamedItem(node);
+
+
+
+// 8) document.<element>.<attribute_node>.specified     ===>    This property returns "true" if the attribute is specified other wise returns an error and might crash your program (be careful).
+// console.log(document.getElementById("myDiv").getAttributeNode("style").specified);
+
+
+

@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.q1{
+    height: 250px;
+    width: 700px;
+    border: 2px solid black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.q1_ques{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.q1_ans{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.q1_btn1, .q1_btn2, .q1_btn3{
+    width: 100px;
+    height: 40px;
+    border: 0.5px solid black;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+.q2{
+    height: 200px;
+    width: 700px;
+    border: 2px solid black;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.q2_ques{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 2px solid black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.q2_ans{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#q2_btn1, #q2_btn2, #q2_btn3{
+    width: 100px;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+}
