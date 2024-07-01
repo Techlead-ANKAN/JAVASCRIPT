@@ -798,3 +798,28 @@ document.getElementById("myid").blur(); */
 
 
 
+
+
+
+//==================== HTML DOM HTMLCOLLECTION( Link: https://www.w3schools.com/jsref/dom_obj_htmlcollection.asp ) ==========================
+
+
+// An HTML Collection is an array-like collection (list) of HTML Elements.
+
+// Element in the HTML Collection can be accessed by index starting from 0.
+
+
+
+// 1) document.<element>.item(index)    ===>    This method returns the element at a specified index in an HTMLCollection.
+// console.log(document.getElementsByTagName("myid").item(1));
+
+
+
+// 2) document.<element>.length     ===|>   It is a rad-only property that returns the no.of elements in an HTML Collection.
+// console.log(document.getElementsByClassName("myclass"));
+
+
+
+
+// 3) document.<element>.namedItem("id or name_attribute")      ===>    This method uses the id or name attribute to identify the element and returns the named element from an HTML Collection.
+// console.log(document.getElementsByTagName("p").namedItem("myElement"));
