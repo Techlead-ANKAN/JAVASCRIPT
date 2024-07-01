@@ -815,9 +815,8 @@ document.getElementById("myid").blur(); */
 
 
 
-// 2) document.<element>.length     ===|>   It is a rad-only property that returns the no.of elements in an HTML Collection.
+// 2) document.<element>.length     ===>   It is a rad-only property that returns the no.of elements in an HTML Collection.
 // console.log(document.getElementsByClassName("myclass"));
-
 
 
 
