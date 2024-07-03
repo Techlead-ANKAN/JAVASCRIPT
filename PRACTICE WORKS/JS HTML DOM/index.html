@@ -1,25 +1,17 @@
-<!-- Q11) Write a JavaScript program to display a random image (clicking on a button) from the following list.
-Sample Image information :
-
-"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", width: "240", height: "160"
-"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", width: "320", height: "195"
-"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg", width: "500", height: "343" -->
-
+<!-- Q13) Write a JavaScript program to get the window width and height (any time the window is resized). -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset=utf-8 />
     <script src="index.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Window Size : height and width</title>
 </head>
 
-<body>
-    <div id="pic" style="width: 600px; height: 400px; display: flex; justify-content: center; align-items: center; border: 1px solid black; "></div>
-    <br>
-    <button onclick="get_image()">Get Image</button>
-</body>
+<body onload="getSize()" onresize="getSize()">
+    <div id="wh">
+
+    </div>
 
 </html>
