@@ -822,3 +822,73 @@ document.getElementById("myid").blur(); */
 
 // 3) document.<element>.namedItem("id or name_attribute")      ===>    This method uses the id or name attribute to identify the element and returns the named element from an HTML Collection.
 // console.log(document.getElementsByTagName("p").namedItem("myElement"));
+
+
+
+
+
+//==================== HTML DOM NODELIST( Link: https://www.w3schools.com/jsref/dom_obj_html_nodelist.asp ) ==========================
+
+
+// A Node List is an arrya like collection (list) of Node Objects. 
+// The Nodes in the NodeList can be accessed by index. 
+// The length property returns the number of nodes in the NodeList.
+
+
+// 1) document.<element>.childNodes.entries()  ===>    This method returns an iterator with the key, value pairs from a nodelist.
+// const list = document.body.childNodes;
+// for(let x of list.entries()) {
+//   console.log(x);
+// }
+
+
+// 2) nodelist.forEach(function(currentValue, index, arr), thisValue)   ===>    This method executes a callback function for each node in a NodeList.
+
+// function() -	Required.
+// A function to run for each node.
+
+
+// currentValue  -	Required.
+// The value of the current node.
+
+
+// index  -	Optional.
+// The index of the current node.
+
+
+// arr -	Optional.
+// The NodeList of the current node.
+
+
+// thisValue  -	Optional. Default undefined.
+// A value passed to the function as its this value.
+
+
+// list.forEach(function(node, index) {
+//       console.log(node);
+// });
+
+
+
+// 3) nodelist.item(index)  ===>    This method is used to access a node at a specified index.
+// const list = document.getElementsByTagName("p");
+// let text = list.item(0).innerHTML;
+
+
+// 4) nodelist.keys()   ===>    This method is used to get array of keys of the nodelist
+// const list = document.body.childNodes;
+// for (let x of list.keys()) {
+//   console.log(x);
+// }
+
+
+// 5) nodelist.values()   ===>    This method is used to get array of values of the nodelist
+// const list = document.body.childNodes;
+// for (let x of list.values()) {
+//   console.log(x);
+// }
+
+
+// 6) nodelist.length   ===>    This method is used to get the length of the nodelist
+// const list = document.body.childNodes;
+// console.log(list.length);
