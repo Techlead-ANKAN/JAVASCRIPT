@@ -892,3 +892,101 @@ document.getElementById("myid").blur(); */
 // 6) nodelist.length   ===>    This method is used to get the length of the nodelist
 // const list = document.body.childNodes;
 // console.log(list.length);
+
+
+
+
+
+//==================== HTML DOM TOKEN LIST( Link: https://www.w3schools.com/jsref/dom_obj_html_domtokenlist.asp ) ==========================
+
+
+// (a)  The "classList" property returns the class names of an element as a "DOMTokenList". This object provides several methods and properties to manipulate the classList.
+// console.log(document.getElementById("myid").classList);
+
+
+// (b)  The "relList" property returns a DOMTokenList representing the "rel" oattribute of a "link" or "a" element. This object provides several methods and properties to manipulate the relList.
+// console.log(document.getElementById("myid").reList);
+
+
+
+// let c_list = document.getElementById("myid").classList;
+
+// let r_list = document.getElementById("myid2").relList;
+
+
+// 1) c_list/r_list.add("new_class / new_rel")  ===> This method is used to add new class or new rel to an element.
+// c_list.add("newClass");
+// r_list.add("preload");
+
+
+// 2) c_list/r_list.contains("class / rel")  ===> This method is used to see if a class or a rel is present in that respective element or not.
+// c_list.contains("oldClass");
+// r_list.contains("preload");
+
+
+
+// 3) c_list/r_list.entries()  ===> The entries() method returns an Iterator with the key/value pairs from a DOMTokenList.
+// let list1 = c_list.entries();
+// let list2 = r_list.entries();
+
+
+// 4) c_list/r_list.forEach()  ===> The forEach() method executes a callback function for each token in a DOMTokenList.
+// c_list.forEach(function(
+    // function to be performed for each token in the DOMTokenList
+// ));
+
+// r_list.forEach(function(
+    // function to be performed for each token in the DOMTokenList
+// ));
+
+
+// 5) c_list/r_list.item(index)     ===>    This method is used to access any particular token in the "DOMTokenList" using it's index.
+// c_list.item(0);
+// r_list.item(1);
+
+
+// 6) c_list/r_list.keys()  ===>    The keys() method returns an Iterator with the keys from a DOMTokenList.
+
+
+// for (let x of c_list.keys()) {
+//   text += x;
+// console.log(text);
+// }
+
+
+// for (let x of r_list.keys()) {
+//   text += x;
+// console.log(text);
+// }
+
+
+
+// 7) c_list/r_lits.length  ===> This property is used to get the length of the DOMTokenList.
+// console.log(c_list.length);
+// console.log(r_list.length);
+
+
+// 9) c_list/r_list.toggle(class/rel)   ===> This method is used to toggle between on and off of a particular "class" or "rel"
+
+// document.getElementById("myDIV").classList.toggle("myStyle");
+// document.getElementById("myDIV").relList.toggle("preload");
+
+
+// 10) c_list/r_list.replace("old / new")  ===> This method is used to replace new class or new rel with an old class or old rel.
+// c_list.replace("old_Class", "new_class");
+// r_list.replace("old_rel", "new_rel");
+
+
+// 6) c_list/r_list.values()  ===>    The values() method returns an Iterator with the values from a DOMTokenList.
+
+
+// for (let x of c_list.values()) {
+//   text += x;
+// console.log(text);
+// }
+
+
+// for (let x of r_list.values()) {
+//   text += x;
+// console.log(text);
+// } 
