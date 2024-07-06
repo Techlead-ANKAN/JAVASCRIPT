@@ -80,4 +80,16 @@
 // console.log(window.outerWidth);
 
 
-// 13) 
+// 13) <window_var>.pageXOffset    ===>    It is property that returns the pixels that the document has scrolled along the X-axis from the top-left corner of the window.
+// console.log(winodw.pageXOffset);
+
+
+// 14) <window_var>.pageYOffset    ===>    It is property that returns the pixels that the document has scrolled along the Y-axis from the top-left corner of the window.
+// console.log(winodw.pageYOffset);
+
+
+// 15) <window_var>.parent  ===>    It is a property that returns the parent of the current window.
+// console.log(window.parent);
+
+
+// 16) 
