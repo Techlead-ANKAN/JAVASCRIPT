@@ -114,3 +114,65 @@
 // 20) window.top   ===>    This property returns the topmost window in the current browser window.
 // console.log(window.top);
 
+
+// ------------------------------ Console Object ------------------------------------------
+
+// The console object provides access to the browsers debugging console. 
+
+// (i) console.assert(<expression>, <message>)  ===>    This method writes a message to the console if tyhe expression is evaluated false.
+// let x = 5;
+// let y = 5;
+// console.assert(x+y == 12, "Asertion is showed since the expression is false");
+
+
+/// (ii) console.clear()    ===>    This method clears the console and writes a message "Conosle was cleared" in the console.
+// console.clear();
+
+
+// (iii) console.count(<label>) ===>    This method is used to count how many times the console.count() is called. The default label is "default", and it is optional.
+// let i;
+// for(i=0;i<10;i++){
+// console.count();
+// console.count("Roll No");
+// }
+
+
+// (iv) console.error(<msg>)    ===>    This method is used to display an error message in the console.
+// console.error("You have made a mistake");
+
+
+// (v) console.group()  ===>    This method is used to put all the messages after this line in a group.
+// console.groupEnd()   ===>    This method is used to close the group.
+// console.log("I am not in the group.");
+// conosle.group();
+// console.log("I am in the group.");
+// console.log("I am in the group.");
+// console.groupEnd();
+// console.log("I am not in the group.");
+
+
+// (vi) console.info(<msg>) ===>    This method is used to output an info message in the console.
+// console.info("This is an info message.");
+
+
+// (vii) console.table(object/array)    ===>   This method is used to convert any object or an array into a table.
+// console.table(["Audi", "Volvo", "Ford"]);
+// console.table({firstname:"John", lastname:"Doe"});
+
+
+// (viii) 
+// console.time();
+
+// //Some Code to be executed
+
+// console.timeEnd();
+
+
+// ------> This method is used to check how much time a code requires to get executed.
+
+
+
+// (ix) console.warn(<msg>) ===>    This method is used to display an warning message in the console.
+// console.warn("This is a warning!!");
+
+
