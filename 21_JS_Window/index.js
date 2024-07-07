@@ -92,4 +92,25 @@
 // console.log(window.parent);
 
 
-// 16) 
+// 16) <window_var>.screenLeft  ===>    It is a property that is used to return the horizontal (x-position) of a window, relative to the screen.
+// console.log(window.screenLeft);
+
+
+// 17) <window_var>.screenTop  ===>    It is a property that is used to return the vertical (y-position) of a window, relative to the screen.
+// console.log(window.screenTop);
+
+
+// 18) sessionStorage  ===>    This object allows you to store key-value pairs in the browser. It stores tha data only for one session. The data is deleted when the browser is closed and are not available for future sessions. 
+// sessionStorage.setItem(<key>, <value>);
+// sessionStorage.getItem(key);
+// sessionStorage.removeItem(<key>, <value>);
+// sessionStorage.clear;
+
+
+// 19) window.self  ===>    This property returns the current window.
+// console.log(window.self);
+
+
+// 20) window.top   ===>    This property returns the topmost window in the current browser window.
+// console.log(window.top);
+
