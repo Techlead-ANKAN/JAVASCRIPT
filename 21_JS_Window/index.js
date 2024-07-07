@@ -176,3 +176,48 @@
 // console.warn("This is a warning!!");
 
 
+
+
+// ------------------------------ Location Object ------------------------------------------
+
+// The location object contains information about the current URL.
+
+// (i) location.hash    ===> This property sets or returns the anchor part of a URL, including the hassh sign.
+// console.log(document.<element>.location.hash);
+// document.<element>.location.hash = "mark_array_find";
+
+
+// (ii) location.host   ===>    This property returns the host (Ip Adress or Domain) and a port of the URL.
+// console.log(document.<element>.location.host);
+
+
+// (iii) location.hostname  ===>    This property returns the host (IP adress or domain) of a URL.
+// console.log(location.hostname);
+
+
+// (iv) location.href   ===> This property is used to set or return the entire url of the current page.
+// location.href = "https://www.w3schools.com";
+// console.log(location.href);
+
+
+// (v) location.origin   ===> This property is used to returns the protocol, hostname and port number of a URL.
+// console.log(location.origin);
+
+
+// (vi) location.pathname   ===> The pathname property sets or returns the pathname of a URL (page).
+// console.log(location.pathname);
+
+
+// (vii) location.port   ===> The port property sets or returns the port number of a URL.
+// console.log(location.port);
+
+
+// (viii) location.reload() ===>    The reload() method reloads the current document. The reload() method does the same as the reload button in your browser.
+// location.reload();
+
+
+// (ix) location.replace(newURL) ===>    The replace() method replaces the current document with a new one.
+// location.replace("https://www.amazon.in/");
+
+
+// (x) 
