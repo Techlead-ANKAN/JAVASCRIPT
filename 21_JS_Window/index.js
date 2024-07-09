@@ -220,4 +220,8 @@
 // location.replace("https://www.amazon.in/");
 
 
-// (x) 
+// (x) document.<element>.location.search   ===>    This method is used to return the query string part of the URL, including the question mark. This mproperty can also be used to set the query string.
+// let anchor = document.getElementById("w3s");
+// let query = anchor.search;
+
+
