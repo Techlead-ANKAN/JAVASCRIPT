@@ -225,3 +225,68 @@
 // let query = anchor.search;
 
 
+
+
+// Window Object Methods  [ link: https://www.w3schools.com/jsref/obj_window.asp ]
+
+
+// 1) window.addEventListener(<event>, <function>)  ===>    This methos is used to attach any event handler to the window.
+// window.addEventListener("load", func());
+// function func(){
+//     alert("Wasssup motherfucker");
+// }
+
+
+
+// 2) window.focus()    ===>    This method sets focus to a window.
+// function win(){
+// let win = window.open("", "", "width=200, height=100");
+// win.focus();
+// };
+
+
+// 3) window.blur()    ===>    This method removes the focus from a window.
+// function win(){
+// let win = window.open("", "", "width=200, height=100");
+// win.blur();
+// };
+
+// let win;
+
+// 4) window.open()    ===>    This method opens a new window.
+// function open_win(){
+//     win = window.open("", "", "width=200, height=100");
+// };
+
+
+// 4) window.close()    ===>    This method closes the new window.
+// function close_win(){
+//     win.close();
+// };
+
+
+// 5) document.<element>.getComputedStyle(<element>, <pseudo_element>)  ===>    This method gets the computed css properties and values of an HTML. It returns a "CSSStyleDeclaration" object.
+// const element = document.getElementById("test");
+// const cssObj = window.getComputedStyle(element, null);
+// let bgColor = cssObj.getPropertyValue("background-color");
+
+
+// 6) window.moveBy(x, y)   ===>    This method moves a window a number of pixels relative to its current coordinates.
+// window.moveBy(150, 150);
+
+
+// 7) window.moveTo(x, y)   ===>    This method moves a window moves to a specified position.
+// window.moveTo(150, 150);
+
+
+// 8) window.print()    ===>    This method prints the content of the current window.
+// function show_content(){
+//     window.print();
+// };
+
+
+// 9) window.removeEventListener(<event>, function) ===>    This method removes an event handler from a window.
+// window.removeEventListener("mousemove", myFunction);
+
+
+// 10) 
