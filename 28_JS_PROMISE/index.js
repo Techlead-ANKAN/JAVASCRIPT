@@ -322,7 +322,7 @@ myPromise.then(
 
 // let newProm = new Promise(function(resolve, reject){
 //   let num = 21;
-  
+
 //   if (num % 2 == 0){
 //     resolve("Even");
 //   }
@@ -441,3 +441,55 @@ myPromise.then(
 //     function(value) {alert("Success")},
 //     function(error) {alert("Failure")}
 // );
+
+
+
+
+
+// -------------------------------JS ASYNC & AWAIT-------------------------------
+
+// async  -> This keyword makes a function return promise.
+// await -> This function makes a function wait for promise.
+
+// Example: 
+
+
+async function example() {
+
+  let p1 = new Promise(function (resolve, reject) {
+    let age = 21;
+
+    if (age >= 18) {
+      resolve("Eligible to vote");
+    }
+    else {
+      reject("Not eligible to vote");
+    }
+  });
+
+  let p2 = new Promise(function (resolve, reject) {
+    let marks = 90;
+
+    if (marks >= 35) {
+      resolve("Pass");
+    }
+    else {
+      reject("Fail");
+    }
+
+  });
+
+  console.log("Fetching Promise 1....");
+  let p1_ans = await p1;
+  console.log("Fetched Promise 1....");
+
+  console.log("Fetching Promise 2....");
+  let p2_ans = await p2;
+  console.log("Fetched Promise 2....");
+
+  return [p1_ans, p2_ans];
+
+}
+
+let answer = example();
+console.log(answer);
