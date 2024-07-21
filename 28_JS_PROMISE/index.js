@@ -169,7 +169,7 @@ myPromise.then(
 //   function (result) {
 //     console.log("Promise 1 - Handler 1(resolve)");
 //   },
-//   // handler 2 for reject
+//   // handler 1 for reject
 //   function (error) {
 //     console.log("Promise 1 - Handler 1(reject)");
 //   }
