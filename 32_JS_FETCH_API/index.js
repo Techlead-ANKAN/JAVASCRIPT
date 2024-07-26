@@ -19,21 +19,21 @@
 
 
 
-let get_response = async() => {
+// let get_response = async() => {
 
-    let place = prompt("Enter location: ")
-    const url = "https://api.weatherapi.com/v1/current.json?key=5380e0ab714e4122999154651242407&q=" + place + "&aqi=no";     // API endpoint
+//     let place = prompt("Enter location: ")
+//     const url = "https://api.weatherapi.com/v1/current.json?key=5380e0ab714e4122999154651242407&q=" + place + "&aqi=no";     // API endpoint
     
-    let response = await fetch(url);  // Fetchiing the response / data in JSON Format
+//     let response = await fetch(url);  // Fetchiing the response / data in JSON Format
 
-    let js_data = await response.json();  // Converting the received response / data from JSON format to JS Object Format
+//     let js_data = await response.json();  // Converting the received response / data from JSON format to JS Object Format
 
-    console.log(js_data);   // usable data
+//     console.log(js_data);   // usable data
 
-    let p = document.getElementsByClassName("weather")[0];
+//     let p = document.getElementsByClassName("weather")[0];
 
-    p.innerHTML = "<b>Location: </b>" + js_data.location.name + "<br>" + "<b>Weather: </b>" + js_data.current.condition.text + "<br>" + "<b>Temperature: </b>" + js_data.current.temp_c + "<br>" + "<b>Last Updated: </b>" + js_data.current.last_updated ;
-}
+//     p.innerHTML = "<b>Location: </b>" + js_data.location.name + "<br>" + "<b>Weather: </b>" + js_data.current.condition.text + "<br>" + "<b>Temperature: </b>" + js_data.current.temp_c + "<br>" + "<b>Last Updated: </b>" + js_data.current.last_updated ;
+// }
 
 
 
@@ -106,3 +106,64 @@ let get_response = async() => {
 
 // 500 Internal Server Error: Indicates that an internal error occurred on the server.
 // 501 Not Implemented: Indicates that the requested method
+
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
+let url = "https://jsonplaceholder.typicode.com/posts"
+
+let options = {
+
+    // (A) method:  GET || POST || PUT
+
+    // GET: Requests for any service to the server.
+    // POST: Uploads something to the server.
+    // PUT: It is an updating operating for any existing resource in the server.
+    
+    method : "POST",
+
+
+    
+    // (B)  headers :{
+                // "content-type" : "<type>"    
+    //      },
+
+    // Some content types are: (Refer to the link: https://www.geeksforgeeks.org/http-headers-content-type/ )
+
+    // (i) application/json: The most content-types which sends the data in JSON format.
+    // (ii) application/x-www-form-urlencoded: This is used for sending form data encoded as key-value pairs.
+    // (iii) multipart/form-data: This is used for sending form data that includes files.
+    // (iv) text/plain: This is for sending plain text data.
+    // (v) text/xml: This is for sending data in XML format.
+
+    headers : {
+        "content-type" : "application/json"
+    },
+
+
+
+    // (C) body: The data is send in the format of JavaScript Object
+
+    // the JSON.stringify()  --> Converts from JavaScript Object to JavaScript String.
+
+    body : JSON.stringify({
+        title : "JS POST API",
+        author : "Ankan Maity",
+        age : 21
+    })
+}
+
+
+async function postData() {
+    try {
+        let response = await fetch(url, options);
+        let data = response.json();
+        console.log(data);
+    }
+    catch(error){
+        throw new Error("Error has occured");
+    }
+}
+
+postData();
