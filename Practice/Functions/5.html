@@ -8,6 +8,36 @@
     <title>Throttle Function</title>
 </head>
 <body>
-    
+    <!-- Button to test throttle -->
+    <button id="btn">Click me</button>
+
+    <script>
+        // Throttle utility function
+        const throttleFunction = (func, delay) => {
+            let lastTime = 0; // store timestamp of last execution
+
+            return function (...args) { // returned wrapper function
+                const now = Date.now(); // current time in ms
+
+                // Only execute if delay has passed since last execution
+                if (now - lastTime >= delay) {
+                    func(...args);       // run the original function
+                    lastTime = now;      // update the last execution time
+                }
+                // If called before delay, nothing happens (click ignored)
+            }
+        }
+
+        // Function to run on button click
+        const handleClick = () => {
+            console.log("Button Clicked at: ", new Date().toLocaleTimeString());
+        }
+
+        // Create throttled version of handleClick (limit 1 call every 2000ms)
+        const throttleClick = throttleFunction(handleClick, 2000);
+
+        // Attach throttled click handler to button
+        document.getElementById("btn").addEventListener("click", throttleClick);
+    </script>
 </body>
 </html>
