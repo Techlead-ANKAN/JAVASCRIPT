@@ -1,0 +1,10 @@
+A. Functions
+
+1. Build a greeting generator function (regular, arrow, expression versions).
+2. Create a function factory that returns functions (e.g., createMultiplier(2) returns a function that doubles numbers).
+3. Implement a higher-order function that takes another function as input and applies it to an array.
+4. Write a debounce function from scratch (delays execution until user stops typing).
+5. Write a throttle function (limit clicks to once every 2 seconds).
+6. Build a function composition utility (compose(f,g)(x) → f(g(x))).
+7. Implement a custom event logger using higher-order functions.
+

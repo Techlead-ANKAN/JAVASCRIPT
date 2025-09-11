@@ -1,0 +1,44 @@
+<!-- 4. Write a debounce function from scratch (delays execution until user stops typing). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debounce Function</title>
+</head>
+<body>
+    <h2>Debounce Search Example</h2>
+    <!-- Input box where user types their query -->
+    <input type="text" id="searchbox" placeholder="Search something...">
+
+    <script>
+        // Debounce utility function
+        const debounce = (fn, delay) => {
+            let timer; // store timeout ID
+            return function(...args) { // wrapper function, collects arguments
+                clearTimeout(timer); // cancel the previous scheduled call
+                timer = setTimeout(() => { // set a new timer
+                    fn(...args); // run the original function with latest arguments
+                }, delay); // wait for 'delay' ms before calling fn
+            }
+        }
+
+        // Simulate a server request function
+        function requestToServer(input) {
+            console.log(`Request to the server for: ${input}`); // log the query
+        }
+
+        // Create a debounced version of requestToServer (500ms delay)
+        const debouncedSearch = debounce(requestToServer, 500);
+
+        // Attach event listener to the input box
+        document.getElementById("searchbox").addEventListener("input", (e) => {
+            // Instead of calling requestToServer directly,
+            // call debouncedSearch so requests only happen
+            // after typing has stopped for 500ms
+            debouncedSearch(e.target.value);
+        })
+    </script>
+</body>
+</html>
