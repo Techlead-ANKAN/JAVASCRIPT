@@ -1,0 +1,24 @@
+<!-- 1. Create a dark mode toggle button. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode toggle button</title>
+</head>
+<body>
+    <button onclick="handleClick()">Click Me</button>
+
+
+    <script>
+        const handleClick = () => {
+            if(document.body.style.backgroundColor == "black")
+                document.body.style.backgroundColor = "white";
+            else
+                document.body.style.backgroundColor = "black"
+        }
+    </script>
+</body>
+</html>

@@ -8,3 +8,15 @@ A. Functions
 6. Build a function composition utility (compose(f,g)(x) → f(g(x))).
 7. Implement a custom event logger using higher-order functions.
 
+B. DOM Manipulation
+
+1. Create a dark mode toggle button.
+2. Build a real-time character counter for a text area.
+3. Implement a to-do list app (add, delete, mark as done).
+4. Make a dropdown menu that opens/closes on click.
+5. Create a form validator (email, password length, required fields).
+6. Build a modal popup with open/close buttons.
+7. Implement event delegation for a list (clicking on items shows their text).
+8. Create a dynamic table from a JS array of objects.
+9. Build an accordion/FAQ section (expand/collapse items).
+10. Add infinite scrolling UI with dummy content.

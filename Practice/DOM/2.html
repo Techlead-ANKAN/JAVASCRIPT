@@ -1,0 +1,25 @@
+<!-- 2. Build a real-time character counter for a text area. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+</head>
+
+<body>
+    <textarea name="" id="textarea" placeholder="enter text" onchange="handleInput(event)"></textarea>
+    <p>Character: <span id="counter"></span></p>
+
+
+    <script>
+        const handleInput = (e) => {
+            document.getElementById("counter").textContent = e.target.value.length
+        }
+    </script>
+
+</body>
+
+</html>
